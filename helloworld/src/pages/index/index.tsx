@@ -1,19 +1,26 @@
-import { View } from '@tarojs/components'
-import { Component } from 'react'
-import MessageComponent from '@/components/MessageComponent'
+import { View } from "@tarojs/components";
+import { Component } from "react";
+import MessageComponent from "@/components/MessageComponent";
+import { Column, Placeholder } from "leo-react";
+import Calculator from "@/components/Calculator";
 
 class Index extends Component {
   state = {
-    msg: 'Hello World!',
-  }
+    msg: "Hello World!",
+  };
 
   onReady() {
-    console.log('onReady')
+    console.log("onReady");
   }
 
   render() {
-    return <MessageComponent message='hello'></MessageComponent>
+    return (
+      <div>
+        <h1> 迷你计算器</h1>
+        <Calculator></Calculator>
+      </div>
+    );
   }
 }
 
-export default Index
+export default Index;
