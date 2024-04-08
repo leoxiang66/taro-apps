@@ -1,16 +1,19 @@
-import { View, Text } from '@tarojs/components'
-import { useLoad } from '@tarojs/taro'
-import './index.css'
+import { View } from '@tarojs/components'
+import { Component } from 'react'
+import MessageComponent from '@/components/MessageComponent'
 
-export default function Index() {
+class Index extends Component {
+  state = {
+    msg: 'Hello World!',
+  }
 
-  useLoad(() => {
-    console.log('Page loaded.')
-  })
+  onReady() {
+    console.log('onReady')
+  }
 
-  return (
-    <View className='index'>
-      <Text>Hello world!</Text>
-    </View>
-  )
+  render() {
+    return <MessageComponent message='hello'></MessageComponent>
+  }
 }
+
+export default Index
