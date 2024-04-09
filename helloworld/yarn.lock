@@ -8156,10 +8156,10 @@ latest-version@^5.1.0:
   dependencies:
     package-json "^6.3.0"
 
-leo-react@^0.24.0:
-  version "0.24.0"
-  resolved "https://registry.yarnpkg.com/leo-react/-/leo-react-0.24.0.tgz#49e6f2fede8266615f9f6218a96da33bf90fe119"
-  integrity sha512-ljn6HUzOSmhPYDKNYow3oNb+Ao4uXEFOd076vN4qLUIDu7nuMOHMXxslk+jBuyvrM39PVezSseWUJzPMDgnegQ==
+leo-react@^0.25.0:
+  version "0.25.0"
+  resolved "https://registry.yarnpkg.com/leo-react/-/leo-react-0.25.0.tgz#c4ff2eefc1a9fa800107a9b9ba57f1461b2995ff"
+  integrity sha512-Y9+IILV+pwA8fLH7OVyj7Ti3i5uP3lMrC7zMoAYbue63rW0phUzLuP7buO8bZB6ZFunH7oO9rdomP+eaNdNc4w==
 
 less-loader@10.2.0:
   version "10.2.0"
