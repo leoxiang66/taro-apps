@@ -30,8 +30,8 @@ function BottomNavbar({ setPage }) {
           />
           <NavbarItem
             name="提交BUG"
-            iconName="weixin"
-            iconFamily="brand"
+            iconName="bug"
+            iconFamily="solid"
             onClick={() => setPage("contact")}
           />
         </Row>
