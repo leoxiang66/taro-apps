@@ -14,7 +14,9 @@
       "ignore": [],
       "disablePlugins": [],
       "outputPath": ""
-    }
+    },
+    "condition": false,
+    "compileWorklet": false
   },
   "compileType": "miniprogram",
   "libVersion": "3.4.0",

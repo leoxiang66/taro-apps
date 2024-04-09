@@ -10,6 +10,7 @@
     "framework": "React"
   },
   "scripts": {
+    "clean": "rm -rf dist/",
     "build:weapp": "taro build --type weapp",
     "build:swan": "taro build --type swan",
     "build:alipay": "taro build --type alipay",
@@ -55,12 +56,14 @@
     "@tarojs/runtime": "3.6.25",
     "@tarojs/shared": "3.6.25",
     "@tarojs/taro": "3.6.25",
-    "leo-react": "^0.20.0",
+    "leo-react": "^0.24.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "taro-icons": "^0.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",
+    "@babel/preset-typescript": "^7.24.1",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.5",
     "@tarojs/cli": "3.6.25",
     "@tarojs/plugin-html": "3.6.25",
@@ -86,7 +89,7 @@
     "stylelint": "^14.4.0",
     "ts-node": "^10.9.1",
     "tsconfig-paths-webpack-plugin": "^4.1.0",
-    "typescript": "^5.1.0",
+    "typescript": "^5.4.4",
     "webpack": "5.78.0"
   }
 }
