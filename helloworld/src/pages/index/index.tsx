@@ -6,6 +6,7 @@ import { windowHeight, windowWidth } from "@/components/sysinfo";
 import Card from "@/components/Card";
 import AboutPage from "../about";
 import ContactPage from "../contact";
+import DateRecorderPage from "../dateRecorder";
 
 function Index() {
   const [currentPage, setCurrentPage] = useState("index");
@@ -34,10 +35,13 @@ function Index() {
             <Row mainAxisAlignment="space-around">
               <Card title={"计算器"} onClick={() => setPage("cal")} />
               {hspace20}
-              <Card title={"敬请期待"} onClick={() => {}} />
+              <Card title={"月经记录器"} onClick={() => setPage("dateRec")} />
             </Row>
             {vspace20}
-            <Row mainAxisAlignment="space-around">{hspace20}</Row>
+            <Row mainAxisAlignment="space-around">
+              <Card title={"敬请期待"} onClick={() => setPage("...")} />
+              {hspace20}
+            </Row>
           </Column>
         </Container>
         <BottomNavbar setPage={setPage} />
@@ -50,6 +54,8 @@ function Index() {
       return buildIndexPage();
     case "cal":
       return <CalculatorPage setPage={setPage} />;
+    case "dateRec":
+      return <DateRecorderPage setPage={setPage} />;
     case "about":
       return <AboutPage setPage={setPage}></AboutPage>;
     case "contact":
