@@ -1,6 +1,4 @@
 import React from "react";
-import { View, Text } from "@tarojs/components";
-import { Button } from "@nutui/nutui-react-taro";
 import BottomNavbar from "../../components/BottomNavbar";
 import {
   Floating,
@@ -8,6 +6,7 @@ import {
   SingleScrollable,
   FullScreen,
   Placeholder,
+  Padding,
 } from "leo-react/dist";
 
 import "./index.scss";
@@ -15,14 +14,16 @@ import "./index.scss";
 function LandingPage() {
   return (
     <FullScreen>
-      <Sizedbox width="100%" height="90%">
+      <Sizedbox width="100%" height="88%">
         <SingleScrollable>
-          <Placeholder height="500px" width="100%"/>
+          <Padding all="2%">
+            <Placeholder height="500px" width="100%" />
+          </Padding>
         </SingleScrollable>
       </Sizedbox>
 
       <Floating bottom="0">
-        <Sizedbox width="100vw">
+        <Sizedbox width="100vw" height="10%">
           <BottomNavbar />
         </Sizedbox>
       </Floating>
